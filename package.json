@@ -1,0 +1,17 @@
+{
+  "name": "PoGo Events",
+  "version": "1.0.0",
+  "description": "Discord bot for Pokemon Go events",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.mjs"
+  },
+  "author": "Gizdulock",
+  "license": "MIT",
+  "dependencies": {
+    "discord.js": "^13.1.0",
+    "dotenv": "^10.0.0",
+    "node-fetch": "^3.1.0",
+    "uuid": "^9.0.0"
+  }
+}

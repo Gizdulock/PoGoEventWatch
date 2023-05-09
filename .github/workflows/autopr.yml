@@ -3,7 +3,7 @@ on:
   issues:
 
     types: [labeled]
-base_branch: master
+    
 permissions:
 
   contents: write
@@ -52,7 +52,7 @@ jobs:
 
       with:
 
-        ref: main
+        base_branch: master
 
         fetch-depth: 1
 

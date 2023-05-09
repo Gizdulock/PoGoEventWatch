@@ -47,12 +47,13 @@ jobs:
         fi
 
     - name: Checkout
-
+      base_branch: master
+      
       uses: actions/checkout@v2
 
       with:
 
-        base_branch: master
+        
 
         fetch-depth: 1
 

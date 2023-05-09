@@ -2,7 +2,13 @@ import fs from 'fs';
 import Discord from 'discord.js';
 
 async function resendEvents(client, textChannelId) {
-  const config = JSON.parse(fs.readFileSync('./events.json'));
+  import Discord from 'discord.js';
+
+  async function resendEvents(client, textChannelId) {
+      let config;
+      Added error handling for when `events.json` cannot be parsed.
+      const lastUpdated = config.lastUpdated;
+      events.sort((a, b) => new Date(a.start) - new Date(b.start));
   const events = config.events.filter(event => new Date(event.start) > new Date('2016'));
   const lastUpdated = config.lastUpdated;
   events.sort((a, b) => new Date(a.start) - new Date(b.start));

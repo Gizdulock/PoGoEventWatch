@@ -3,7 +3,7 @@ on:
   issues:
 
     types: [labeled]
-
+base_branch: master
 permissions:
 
   contents: write
@@ -59,7 +59,7 @@ jobs:
     - name: AutoPR
 
       uses: docker://ghcr.io/irgolic/autopr:latest
-      base_branch: master
+      
       env:
 
         OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}

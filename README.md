@@ -1,1 +1,3 @@
-# PoGoEventWatch
+{
+    "outcome": "success"
+}

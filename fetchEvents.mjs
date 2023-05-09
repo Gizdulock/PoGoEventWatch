@@ -1,8 +1,12 @@
 import fetch from 'node-fetch';
 
 async function fetchEvents() {
-  const response = await fetch('https://raw.githubusercontent.com/ccev/pogoinfo/v2/active/events.json');
-  const data = await response.json();
+  import fetch from 'node-fetch';
+
+  async function fetchEvents() {
+      try {
+      Added error handling for `fetch` operation in `fetchEvents.mjs`
+  }
   const events = data.filter(event => new Date(event.start).getFullYear() >= 2016);
   return events;
 }

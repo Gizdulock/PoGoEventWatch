@@ -59,7 +59,7 @@ jobs:
 
     - name: AutoPR
       
-      base_branch: master
+      base_branch: origin/master
       
       uses: docker://ghcr.io/irgolic/autopr:latest
       

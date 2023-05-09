@@ -47,7 +47,7 @@ jobs:
         fi
 
     - name: Checkout
-      base_branch: master
+      
       
       uses: actions/checkout@v2
 
@@ -58,7 +58,9 @@ jobs:
         fetch-depth: 1
 
     - name: AutoPR
-
+      
+      base_branch: master
+      
       uses: docker://ghcr.io/irgolic/autopr:latest
       
       env:

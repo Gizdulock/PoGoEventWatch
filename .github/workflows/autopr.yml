@@ -53,13 +53,11 @@ jobs:
 
       with:
 
-        
+        ref: main
 
         fetch-depth: 1
 
     - name: AutoPR
-      
-      base_branch: origin/master
       
       uses: docker://ghcr.io/irgolic/autopr:latest
       
